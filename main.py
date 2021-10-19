@@ -67,6 +67,14 @@ async def on_message(message):
     await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
     await message.channel.send("*normal voice* Want me to send you there (:")
   
+  if message.content.startswith('where is chap'):
+    await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
+    await message.channel.send("*normal voice* Want me to send you there (:")
+  
+  if message.content.startswith('where is new chap'):
+    await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
+    await message.channel.send("*normal voice* Want me to send you there (:")
+  
   if message.content.startswith('where chap'):
     await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
     await message.channel.send("*normal voice* Want me to send you there (:")
@@ -75,6 +83,27 @@ async def on_message(message):
       await message.channel.send("When its done being translated :p")
   
   if message.content.startswith('when new chap'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('when is the new chap'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('new chapter when'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('new chap when'):
     opt = random.randint(1, 2)
     if opt == 1:
       await message.channel.send("When its done being translated :p")

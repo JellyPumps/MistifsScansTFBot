@@ -62,6 +62,39 @@ async def on_message(message):
       await message.channel.send("When its done being translated :p")
     if opt == 2:
       await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('where new chap'):
+    await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
+    await message.channel.send("*normal voice* Want me to send you there (:")
+  
+  if message.content.startswith('where chap'):
+    await message.channel.send("*Demonic voice* In the depths of my stomatch often reffered to as H E L L")
+    await message.channel.send("*normal voice* Want me to send you there (:")
+  
+  if message.content.startswith('when chap'):
+      await message.channel.send("When its done being translated :p")
+  
+  if message.content.startswith('when new chap'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('when will new chapter'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+  
+  if message.content.startswith('when will chapter'):
+    opt = random.randint(1, 2)
+    if opt == 1:
+      await message.channel.send("When its done being translated :p")
+    if opt == 2:
+      await message.channel.send('When its ready to be released :p')
+
 
   if ('gib' in msgCont) and ('chapter' in msgCont):
     await message.channel.send("nay, thee wilt asketh nicely 'r as the ov'rl'rds has't did state +10 minutes to releaseth")
@@ -100,6 +133,36 @@ async def on_message(message):
         await message.channel.send("When its done being translated :p")
       if opt == 2:
         await message.channel.send('When its ready to be released :p')  
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  #
+  if message.content.startswith("!**!#!meme"):
+    await message.channel.send("Put the memes in the bag onii-chan *points gun*")
 
 
 keep_alive()

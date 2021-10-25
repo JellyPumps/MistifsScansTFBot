@@ -7,7 +7,6 @@ client = discord.Client()
 
 commonWords = ['next', 'release', 'new', 'come', 'out']
 sentenceKeyWord = ['does', 'gonna', 'going']
-commands = ['^meme', '^hi', '^r34', '^bye!']
 
 @client.event
 async def on_ready():
@@ -191,90 +190,5 @@ async def on_message(message):
   #
   #
   #
-  if message.content.startswith("^help"):
-    await message.channel.send("Here are the commands I answer: {0}".format(commands))
-  #
-  #
-  #
-  # 
-  if message.content.startswith("^meme"):
-    memeopt = random.randint(1, 4)
-    print(memeopt)
-    if memeopt == 1:
-      await message.channel.send("Put the memes in the bag onii-chan *points gun*")
-    if memeopt == 2:
-      await message.channel.send("Time to sexually harass Iruma-chi")
-    if memeopt == 3:
-      await message.channel.send("Me:Makes  Pikachu meme in text form\nReddit: 7 upvotes\nMe:\n⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿\n⣿⣿⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⠀⣿\n⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿\n⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿\n⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢰⣿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣀⣀⣾⣿⣿⣿⣿")
-    if memeopt == 4:
-      await message.channel.send("Did you know? In chapter 109, Clara slept with Iruma.")
-  #
-  #
-  #
-  #
-  if message.content.startswith("^hi"):
-    await message.channel.send("Hello o/ *Waves*")
-  #
-  #
-  #
-  #
-  if message.content.startswith("^bye"):
-    await message.channel.send("Bye! *Waves*")
-  #
-  #
-  #
-  #
-  if message.content.startswith("^GoodbyeForever"):
-    await message.channel.send("F-fine I didn't care for you anyway *snif*")
-  #
-  #
-  #
-  #
-  if message.content.startswith("^r34"):
-    hornopt = random.randint(1, 12)
-    if hornopt == 1:
-      await message.channel.send(file=discord.File('1.jpg'))
-    if hornopt == 2:
-      await message.channel.send(file=discord.File('2.jpg'))
-    if hornopt == 3:
-      await message.channel.send(file=discord.File('3.jpg'))
-    if hornopt == 4:
-      await message.channel.send(file=discord.File('4.jpg'))
-    if hornopt == 5:
-      await message.channel.send(file=discord.File('5.jpg'))
-    if hornopt == 6:
-      await message.channel.send(file=discord.File('6.jpg'))
-    if hornopt == 7:
-      await message.channel.send(file=discord.File('7.jpg'))
-    if hornopt == 8:
-      await message.channel.send(file=discord.File('8.jpg'))
-    if hornopt == 9:
-      await message.channel.send(file=discord.File('9.jpg'))
-    if hornopt == 10:
-      await message.channel.send(file=discord.File('10.jpg'))
-    if hornopt == 11:
-      await message.channel.send(file=discord.File('11.jpg'))
-    if hornopt == 12:
-      await message.channel.send(file=discord.File('12.jpg'))
-  #
-  #
-  #
-  #
-  if message.content.startswith("^horny"):
-    iruopt = random.randint(1, 6)
-    if iruopt == 1:
-      await message.channel.send(file=discord.File('irumean.jpg'))
-    if iruopt == 2:
-      await message.channel.send(file=discord.File('irumean2.jpg'))
-    if iruopt == 3:
-      await message.channel.send(file=discord.File('irumean3.jpg'))
-    if iruopt == 4:
-      await message.channel.send(file=discord.File('irumean4.jpg'))
-    if iruopt == 5:
-      await message.channel.send(file=discord.File('irumean5.jpg'))
-    if iruopt == 6:
-      await message.channel.send(file=discord.File('irumean6.jpg'))
-
-
 keep_alive()
 client.run(os.environ['token'])
